@@ -5,7 +5,6 @@ class Pokemon {
   final int? weight;
   final List<String>? abilities;
   final String? imageFromApi;
-  // NOVO: Controle de favorito
   bool isFavorite;
 
   Pokemon({
