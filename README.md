@@ -39,7 +39,7 @@ Para o desenvolvimento deste projeto, foram utilizadas as seguintes fontes e fer
 
 - **[PokeAPI](https://pokeapi.co/):** API RESTful utilizada para o consumo de dados dos Pokémons.
 - **[Dart Documentation](https://dart.dev/guides):** Documentação oficial da linguagem Dart para consultas sobre sintaxe e boas práticas.
-- **[Curso de Flutter #2 - Ambiente de desenvolvimento](https://www.youtube.com/watch?v=Exemplo):** Guia utilizado para a configuração inicial do Flutter e do emulador.
+- **[Curso de Flutter - Canal FLutterando]([https://www.youtube.com/watch?v=Exemplo](https://www.youtube.com/watch?v=ZupeUUtNaeg&t=265s)):** Guia
 - **[Flutter Documentation](https://docs.flutter.dev/):** Referência principal para a construção dos Widgets e lógica de navegação.
 
 ##  Sobre o Desenvolvimento e Aprendizado
