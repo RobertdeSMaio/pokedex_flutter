@@ -41,6 +41,7 @@ Para o desenvolvimento deste projeto, foram utilizadas as seguintes fontes e fer
 - **[Dart Documentation](https://dart.dev/guides):** Documentação oficial da linguagem Dart para consultas sobre sintaxe e boas práticas.
 - **[Curso de Flutter - Canal FLutterando](https://www.youtube.com/watch?v=ZupeUUtNaeg&t=265s):** Guia
 - **[Flutter Documentation](https://docs.flutter.dev/):** Referência principal para a construção dos Widgets e lógica de navegação.
+- **[Flutter Icons](https://api.flutter.dev/flutter/material/Icons-class.html): ** Icones que eu utilizei
 
 ##  Sobre o Desenvolvimento e Aprendizado
 
