@@ -31,6 +31,7 @@ lib/
 ├── services/    # Lógica de integração com a API (ApiService)
 ├── Views/       # Interfaces do usuário (home.dart e single.dart)
 └── main.dart    # Arquivo principal
+```
 
 ##  Referências e Créditos
 
