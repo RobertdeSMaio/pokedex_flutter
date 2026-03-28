@@ -42,7 +42,7 @@ Para o desenvolvimento deste projeto, foram utilizadas as seguintes fontes e fer
 - **[Dart Documentation](https://dart.dev/guides):** Documentação oficial da linguagem Dart para consultas sobre sintaxe e boas práticas.
 - **[Curso de Flutter - Canal FLutterando](https://www.youtube.com/watch?v=ZupeUUtNaeg&t=265s):** Guia no youtube
 - **[Flutter Documentation](https://docs.flutter.dev/):** Referência principal para a construção dos Widgets e lógica de navegação.
-- **[Hero Animations](https://docs.flutter.dev/ui/animations/hero-animations): ** Documentação sobre animações hero
-- **[FlutterBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html): ** Documentação do Builder
-- **[Flutter Icons](https://api.flutter.dev/flutter/material/Icons-class.html): ** Icones que eu utilizei
-- **[StackOverFlow](https://stackoverflow.com/questions/49045393/message-flutter-run-no-connected-devices): **Problemas de configurações
+- **[Hero Animations](https://docs.flutter.dev/ui/animations/hero-animations):** Documentação sobre animações hero
+- **[FlutterBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html):** Documentação do Builder
+- **[Flutter Icons](https://api.flutter.dev/flutter/material/Icons-class.html):** Icones que eu utilizei
+- **[StackOverFlow](https://stackoverflow.com/questions/49045393/message-flutter-run-no-connected-devices):** Problemas de configurações
