@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../models/pokemon.dart';
 import '../Views/single.dart';
+import '../services/fav_service.dart';
+import '../Views/fav.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -39,6 +41,10 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _pokemons = newPokemons;
         _currentPage = page;
+
+        for (var pokemon in _pokemons) {
+          pokemon.isFavorite = FavService.isFav(pokemon.name);
+        }
       });
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -62,7 +68,9 @@ class _HomePageState extends State<HomePage> {
 
     try {
       final pokemon = await apiService.fetchPokemonDetails(name.toLowerCase().trim());
+
       setState(() {
+        pokemon.isFavorite = FavService.isFav(pokemon.name);
         _pokemons = [pokemon];
       });
     } catch (e) {
@@ -83,6 +91,20 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('PokéDex'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.star, color: Colors.amber),
+            tooltip: 'Ver Favoritos',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FavoritesPage()),
+              ).then((_) {
+                setState(() {});
+              });
+            },
+          ),
+        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(60),
           child: Padding(
@@ -111,7 +133,6 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          // Lista de Pokémons
           Expanded(
             child: _isLoading
                 ? const Center(child: CircularProgressIndicator())
@@ -133,7 +154,36 @@ class _HomePageState extends State<HomePage> {
                   ),
                   title: Text(pokemon.name.toUpperCase(),
                       style: const TextStyle(fontWeight: FontWeight.bold)),
-                  trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.arrow_forward_ios, size: 16),
+                      const SizedBox(width: 8),
+                      IconButton(
+                        padding: EdgeInsets.zero,
+                        constraints: const BoxConstraints(minWidth: 24),
+                        icon: Icon(
+                          pokemon.isFavorite ? Icons.star : Icons.star_rate_outlined,
+                          size: 20,
+                          color: pokemon.isFavorite ? Colors.yellow[700] : Colors.grey,
+                        ),
+                        onPressed: () {
+                          setState(() {
+                            FavService.toggleFavorite(pokemon);
+                          });
+
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(pokemon.isFavorite
+                                    ? "${pokemon.name.toUpperCase()} salvo em favoritos!"
+                                    : "Removido dos favoritos"),
+                                duration: const Duration(milliseconds: 500),
+                              )
+                          );
+                        },
+                      ),
+                    ],
+                  ),
                   onTap: () {
                     Navigator.push(
                       context,

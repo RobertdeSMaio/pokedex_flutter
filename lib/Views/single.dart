@@ -103,7 +103,7 @@ class _SinglePageState extends State<Single> {
                                   borderRadius: BorderRadius.circular(15),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: Colors.black.withOpacity(0.05),
+                                      color: Colors.black,
                                       blurRadius: 5,
                                     )
                                   ],

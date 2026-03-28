@@ -5,6 +5,8 @@ class Pokemon {
   final int? weight;
   final List<String>? abilities;
   final String? imageFromApi;
+  // NOVO: Controle de favorito
+  bool isFavorite;
 
   Pokemon({
     required this.name,
@@ -13,6 +15,7 @@ class Pokemon {
     this.weight,
     this.abilities,
     this.imageFromApi,
+    this.isFavorite = false,
   });
 
   factory Pokemon.fromJson(Map<String, dynamic> json) {
@@ -34,6 +37,7 @@ class Pokemon {
           : null,
     );
   }
+
   String get imageUrl {
     if (imageFromApi != null && imageFromApi!.isNotEmpty) {
       return imageFromApi!;
