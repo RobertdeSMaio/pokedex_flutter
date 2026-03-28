@@ -47,6 +47,6 @@ Para o desenvolvimento deste projeto, foram utilizadas as seguintes fontes e fer
 Este projeto faz parte da minha transição e expansão de competências para o desenvolvimento mobile. 
 
 - **Base de Conhecimento:** Toda a lógica de componentes e consumo de APIs foi construída com base na minha experiência prévia com **React.js** e **C#/.NET**. 
-- **Curva de Aprendizado:** Por estar em uma fase inicial de estudos em **Dart** e **Flutter**, utilizei este projeto como um laboratório para entender o ciclo de vida de widgets, sistemas de constraints e a sintaxe da linguagem.
+- **Curva de Aprendizado:** Por estar em uma fase inicial de estudos em **Dart** e **Flutter**, utilizei este projeto, que é um teste de desenvolvimento para o Grupo Carone, como um laboratório para entender o ciclo de vida de widgets, sistemas de constraints e a sintaxe da linguagem.
 
 Embora ainda não possua domínio total do ecossistema Flutter, este app demonstra minha capacidade de aplicar conceitos de arquitetura e lógica de programação em uma nova tecnologia de forma ágil e funcional.
