@@ -1,26 +1,27 @@
-#  PokéDex App - Flutter Project
+#  PokéDex App - Flutter
 
-Este é um projeto desenvolvido em **Flutter** que consome a [PokeAPI](https://pokeapi.co/). O objetivo principal foi colocar em prática conceitos de navegação, consumo de APIs REST e criação de layouts responsivos no ambiente mobile.
-
-Como venho de uma base em **Full-Stack (React/C#)**, este projeto foi minha porta de entrada para entender as diferenças entre o desenvolvimento Web e Mobile.
+- **Base de Conhecimento:** Toda a lógica de componentes e consumo de APIs foi construída com base na minha experiência prévia com **React.js** e **C#/.NET** e leitura de documentação e etc... 
+- **Curva de Aprendizado:** Por estar em uma fase inicial de estudos em **Dart** e **Flutter**, utilizei este projeto, que é um teste de desenvolvimento para o Grupo Carone, como um laboratório para entender o ciclo de vida de widgets, sistemas de constraints e a sintaxe da linguagem.
+- Embora ainda não possua domínio total do ecossistema Flutter, este app demonstra minha capacidade de aplicar conceitos de arquitetura e lógica de programação em uma nova tecnologia de forma funcional.
 
 ##  Funcionalidades
 
-- **Listagem Dinâmica:** Exibição de Pokémons com imagens e nomes.
-- **Paginação Clássica:** Navegação por páginas (20 Pokémons por vez) para melhor performance e controle de dados.
-- **Busca em Tempo Real:** Filtro por nome diretamente na página atual conforme o usuário digita.
-- **Detalhes Completos:** Tela exclusiva para cada Pokémon com Peso, Altura e Habilidades.
-- **UI Responsiva:** Implementação de `min-height` para garantir que o card de detalhes preencha a tela inteira, independentemente do dispositivo.
+- **Listagem Dinâmica:** Exibição de Pokémons com imagens e nomes extraídos da API.
+- **Paginação:** Navegação por páginas (20 Pokémons por vez) para garantir performance e controle de dados.
+- **Busca em Tempo Real:** Filtra por nome diretamente na página atual.
+- **Sistema de Favoritos:** Possibilidade de favoritar Pokémons.
+- **Detalhes Completos:** Tela exclusiva para cada Pokémon apresentando Peso, Altura, Habilidades e arte.
+- **UI Responsiva:** Implementação de `LayoutBuilder` e `ConstrainedBox` para garantir que o layout preencha a tela inteira, independentemente do dispositivo.
 
 ##  Tecnologias e Conceitos Utilizados
 
 - **Linguagem:** Dart
 - **Framework:** Flutter
-- **Consumo de API:** `http` package para requisições assíncronas.
-- **Widgets:** - `LayoutBuilder` & `ConstrainedBox` (para o efeito de preenchimento total da tela).
+- **Consumo de API:** Package `http` para requisições assíncronas e tratamento de JSON.
+- **Widgets e UI:** - `LayoutBuilder` & `ConstrainedBox` para design adaptável.
     - `FutureBuilder` para gerenciar o estado das chamadas de API.
     - `Hero Animation` para transições suaves de imagens entre telas.
-- **Organização:** Separação de responsabilidades entre `Models`, `Views` e `Services`.
+- **Arquitetura:** Separação clara de responsabilidades entre `Models`, `Views` e `Services`.
 
 
 ##  Estrutura de Pastas
@@ -39,15 +40,9 @@ Para o desenvolvimento deste projeto, foram utilizadas as seguintes fontes e fer
 
 - **[PokeAPI](https://pokeapi.co/):** API RESTful utilizada para o consumo de dados dos Pokémons.
 - **[Dart Documentation](https://dart.dev/guides):** Documentação oficial da linguagem Dart para consultas sobre sintaxe e boas práticas.
-- **[Curso de Flutter - Canal FLutterando](https://www.youtube.com/watch?v=ZupeUUtNaeg&t=265s):** Guia
+- **[Curso de Flutter - Canal FLutterando](https://www.youtube.com/watch?v=ZupeUUtNaeg&t=265s):** Guia no youtube
 - **[Flutter Documentation](https://docs.flutter.dev/):** Referência principal para a construção dos Widgets e lógica de navegação.
+- **[Hero Animations](https://docs.flutter.dev/ui/animations/hero-animations): ** Documentação sobre animações hero
+- **[FlutterBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html): ** Documentação do Builder
 - **[Flutter Icons](https://api.flutter.dev/flutter/material/Icons-class.html): ** Icones que eu utilizei
-
-##  Sobre o Desenvolvimento e Aprendizado
-
-Este projeto faz parte da minha transição e expansão de competências para o desenvolvimento mobile. 
-
-- **Base de Conhecimento:** Toda a lógica de componentes e consumo de APIs foi construída com base na minha experiência prévia com **React.js** e **C#/.NET**. 
-- **Curva de Aprendizado:** Por estar em uma fase inicial de estudos em **Dart** e **Flutter**, utilizei este projeto, que é um teste de desenvolvimento para o Grupo Carone, como um laboratório para entender o ciclo de vida de widgets, sistemas de constraints e a sintaxe da linguagem.
-
-Embora ainda não possua domínio total do ecossistema Flutter, este app demonstra minha capacidade de aplicar conceitos de arquitetura e lógica de programação em uma nova tecnologia de forma ágil e funcional.
+- **[StackOverFlow](https://stackoverflow.com/questions/49045393/message-flutter-run-no-connected-devices): **Problemas de configurações
